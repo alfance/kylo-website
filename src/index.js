@@ -15,6 +15,7 @@ import PortfolioAboutpage from './views/portfolio-aboutpage'
 import Portfolio from './views/portfolio'
 import Portfolioproject2 from './views/portfolioproject2'
 import Portfolioproject1 from './views/portfolioproject1'
+import NetflixLiveCapture from './views/netflix-live-capture'
 import NotFound from './views/not-found'
 
 
@@ -40,6 +41,11 @@ const App = () => {
           <Route component={Portfolio} exact path="/" />
           <Route component={Portfolioproject2} exact path="/portfolioproject2" />
           <Route component={Portfolioproject1} exact path="/portfolioproject1" />
+          <Route
+            component={NetflixLiveCapture}
+            exact
+            path="/netflix-live-capture"
+          />
           <Route component={NotFound} path="**" />
           <Redirect to="**" />
         </Switch>

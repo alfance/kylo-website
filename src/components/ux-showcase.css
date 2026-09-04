@@ -1,0 +1,121 @@
+.ux-showcase-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+  aspect-ratio: 1360 / 560;
+}
+@media(max-width: 900px) {
+  .ux-showcase-bleed {
+    padding: 0 20px;
+  }
+}
+
+.ux-gradient {
+  position: absolute;
+  top: 20%;
+  left: 41.6%;
+  width: 41.76%;
+  height: 61%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ux-window {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 50%;
+  aspect-ratio: 1680 / 1008;
+  border-radius: 12px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.ux-take-controller {
+  position: absolute;
+  top: 44.85%;
+  left: 36.36%;
+  width: 22%;
+  aspect-ratio: 738 / 715;
+  filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
+  z-index: 2;
+}
+
+.ux-devices {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34%;
+  height: 100%;
+  z-index: 2;
+}
+.ux-device {
+  position: absolute;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+.ux-device-iphone {
+  top: 20%;
+  right: 6%;
+  width: 59.4%;
+  aspect-ratio: 669 / 379;
+}
+.ux-device-ipad {
+  top: 44%;
+  right: 6%;
+  width: 88%;
+  aspect-ratio: 1069 / 796;
+}
+
+.ux-swap-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+@media(max-width: 767px) {
+  .ux-showcase-bleed {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .ux-gradient {
+    display: none;
+  }
+  .ux-window,
+  .ux-devices {
+    position: static;
+    width: 100%;
+    max-width: 420px;
+    transform: none !important;
+  }
+  .ux-take-controller {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    transform: none !important;
+  }
+  .ux-devices {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .ux-device {
+    position: relative;
+    width: 80%;
+  }
+}

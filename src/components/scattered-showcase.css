@@ -1,0 +1,152 @@
+.scattered-showcase-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+@media(max-width: 900px) {
+  .scattered-showcase-bleed {
+    padding: 0 20px;
+  }
+}
+
+.scattered-showcase {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1360 / 800;
+}
+
+.scattered-gradient {
+  position: absolute;
+  top: 60%;
+  left: 45.3%;
+  width: 49.4%;
+  aspect-ratio: 1221 / 495;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.scattered-devices {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
+.scattered-device {
+  display: block;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+.scattered-device-ipad {
+  width: 35%;
+}
+.scattered-device-iphone {
+  width: 24.15%;
+}
+@media(max-width: 767px) {
+  .scattered-devices {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.scattered-showcase-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  aspect-ratio: 1341 / 754;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #111111;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.scattered-showcase-bg-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.scattered-float {
+  position: absolute;
+  border-radius: 8px;
+  background-color: #111111;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  z-index: 2;
+}
+.scattered-float-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* Connection: Companion App Server (265x265) */
+.scattered-float-1 {
+  width: 12.1%;
+  aspect-ratio: 265 / 265;
+  bottom: 7.5%;
+  right: 26.25%;
+}
+/* Take Recorder: Playback (277x400) */
+.scattered-float-2 {
+  width: 12.65%;
+  aspect-ratio: 277 / 400;
+  top: 16.15%;
+  right: 26.65%;
+}
+/* CinemachineVirtualCamera Inspector (273x395) */
+.scattered-float-3 {
+  width: 12.5%;
+  aspect-ratio: 273 / 395;
+  top: 20.7%;
+  right: 6%;
+}
+/* VirtualCameraDevice Inspector (273x619) */
+.scattered-float-4 {
+  width: 12.5%;
+  aspect-ratio: 273 / 619;
+  bottom: 11.7%;
+  left: 3.6%;
+}
+/* New Shot Library (249x447) */
+.scattered-float-5 {
+  width: 11.4%;
+  aspect-ratio: 249 / 447;
+  bottom: 5%;
+  right: 9%;
+}
+/* Timeline / Take Recorder Track (659x271) */
+.scattered-float-6 {
+  width: 30.2%;
+  aspect-ratio: 659 / 271;
+  bottom: 7.5%;
+  left: 19.85%;
+}
+
+@media(max-width: 767px) {
+  .scattered-showcase {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .scattered-showcase-bg,
+  .scattered-float {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    max-width: 420px;
+  }
+}
