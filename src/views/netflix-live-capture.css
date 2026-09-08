@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   overflow: auto;
+  overflow-x: hidden;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
@@ -177,6 +178,9 @@
 .netflix-pitch-subsection-narrow {
   width: 45%;
 }
+.netflix-pitch-ai-intro {
+  margin-top: 16px;
+}
 
 h3.netflix-pitch-gradient-text {
   font-size: 32px;
@@ -191,12 +195,12 @@ h3.netflix-pitch-gradient-text {
   gap: 32px;
 }
 .netflix-pitch-ai-shipped-row .netflix-pitch-subsection-narrow {
-  margin-top: 16px;
+  margin-top: 39.6%;
   flex-shrink: 0;
 }
 .netflix-pitch-ai-shipped-video-frame {
   position: relative;
-  width: 54%;
+  width: 50%;
   aspect-ratio: 688 / 600;
   overflow: hidden;
   flex-shrink: 0;
@@ -204,9 +208,7 @@ h3.netflix-pitch-gradient-text {
   /* margin scales with section width so it always clears the collage's
      own width-driven height (collage height ~= 0.87 * (50% - 40px)),
      plus a steady ~200px gap below it, regardless of viewport width */
-  margin-top: 44%;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-  transform: translateX(10%);
+  margin-top: 23.1%;
   z-index: 4;
 }
 .netflix-pitch-ai-shipped-video {
@@ -219,7 +221,7 @@ h3.netflix-pitch-gradient-text {
 
 .netflix-pitch-focus-gradient-bleed {
   position: relative;
-  top: calc(16px + 10vw);
+  top: calc(16px + 7.8vw);
   left: 50%;
   width: 100vw;
   margin-left: -50vw;
@@ -246,7 +248,7 @@ h3.netflix-pitch-gradient-text {
   display: flex;
   justify-content: center;
   padding: 40px 40px 0;
-  margin-top: calc(32px + 20%);
+  margin-top: calc(-18px + 20%);
 }
 .netflix-pitch-focus-group {
   position: relative;
@@ -304,7 +306,7 @@ h3.netflix-pitch-gradient-text {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 32px;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 .netflix-pitch-agentic-row .netflix-pitch-subsection-narrow {
   flex-shrink: 0;
@@ -410,6 +412,9 @@ h3.netflix-pitch-gradient-text {
   }
   .netflix-pitch-ai-shipped-video-frame {
     transform: none;
+    margin-top: 16px;
+  }
+  .netflix-pitch-ai-shipped-row .netflix-pitch-subsection-narrow {
     margin-top: 16px;
   }
   .netflix-pitch-hero-text {

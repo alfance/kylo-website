@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 import './collage-reveal.css'
 
-const CollageReveal = ({ targetRef }) => {
+const CollageReveal = () => {
+  const ref = useRef(null)
   const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ['start 1', 'center 0.5'],
+    target: ref,
+    offset: ['start 0.25', 'end 0.15'],
   })
 
   const left1 = useTransform(scrollYProgress, [0, 0.7], ['0%', '27.5%'])
@@ -26,7 +27,7 @@ const CollageReveal = ({ targetRef }) => {
   const opacity3 = useTransform(scrollYProgress, [0.7, 1], [1, 0])
 
   return (
-    <div className="collage-reveal">
+    <div className="collage-reveal" ref={ref}>
       <motion.img
         src="/external/netflix-live-capture/collage-connection.png"
         alt="Connections panel"

@@ -22,7 +22,6 @@ const FixItem = ({ label }) => <li className="Epilogue-17">{label}</li>
 const NetflixLiveCapture = (props) => {
   const walkOldRef = useRef(null)
   const walkNewRef = useRef(null)
-  const shippedVideoRef = useRef(null)
 
   const replayWalkVideosTogether = () => {
     const oldVideo = walkOldRef.current
@@ -127,44 +126,42 @@ const NetflixLiveCapture = (props) => {
                   Where AI Takes It Further
                 </h2>
               </div>
-              <CollageReveal targetRef={shippedVideoRef} />
+              <CollageReveal />
+            </div>
+
+            <div className="netflix-pitch-subsection netflix-pitch-subsection-narrow netflix-pitch-ai-intro">
+              <h3 className="netflix-pitch-gradient-text Epilogue-24Bold">
+                1. Optimizing Vibe Coding Between Design and Dev
+              </h3>
+              <p className="netflix-pitch-muted Epilogue-17">
+                Live Capture dev work continued into 2026. AI-assisted
+                development changed how fast we could move. Here's what
+                shipped:
+              </p>
             </div>
 
             <div className="netflix-pitch-ai-shipped-row">
-              <div className="netflix-pitch-subsection netflix-pitch-subsection-narrow">
-                <h3 className="netflix-pitch-gradient-text Epilogue-24Bold">
-                  1. Optimizing Vibe Coding Between Design and Dev
-                </h3>
-                <p className="netflix-pitch-muted Epilogue-17">
-                  Live Capture dev work continued into 2026. AI-assisted
-                  development changed how fast we could move. Here's what
-                  shipped:
-                </p>
-                <ul className="netflix-pitch-bullet-list">
-                  <li className="Epilogue-17">
-                    <strong className="Epilogue-17Bold">
-                      Unified all Live Capture windows
-                    </strong>{' '}
-                    (connection, take recorder, timecode, and shot
-                    management) into one surface.
-                  </li>
-                  <li className="Epilogue-17">
-                    Rendered the virtual camera app{' '}
-                    <strong className="Epilogue-17Bold">in-browser</strong>{' '}
-                    for faster testing
-                  </li>
-                  <li className="Epilogue-17">
-                    <strong className="Epilogue-17Bold">
-                      Re-architected the timeline
-                    </strong>{' '}
-                    for more robust live vs. playback shot handling
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="netflix-pitch-ai-shipped-video-frame"
-                ref={shippedVideoRef}
-              >
+              <ul className="netflix-pitch-bullet-list netflix-pitch-subsection-narrow">
+                <li className="Epilogue-17">
+                  <strong className="Epilogue-17Bold">
+                    Unified all Live Capture windows
+                  </strong>{' '}
+                  (connection, take recorder, timecode, and shot management)
+                  into one surface.
+                </li>
+                <li className="Epilogue-17">
+                  Rendered the virtual camera app{' '}
+                  <strong className="Epilogue-17Bold">in-browser</strong> for
+                  faster testing
+                </li>
+                <li className="Epilogue-17">
+                  <strong className="Epilogue-17Bold">
+                    Re-architected the timeline
+                  </strong>{' '}
+                  for more robust live vs. playback shot handling
+                </li>
+              </ul>
+              <div className="netflix-pitch-ai-shipped-video-frame">
                 <video
                   src="/external/netflix-live-capture/2026-take-shot-crop-1.mp4"
                   loop="true"
