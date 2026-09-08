@@ -12,19 +12,19 @@ const CollageReveal = () => {
   })
 
   const left1 = useTransform(scrollYProgress, [0, 0.7], ['0%', '27.5%'])
-  const width1 = useTransform(scrollYProgress, [0, 0.7, 1], ['31.33%', '45%', '15%'])
+  const width1 = useTransform(scrollYProgress, [0, 0.7, 1], ['28.64%', '45%', '15%'])
   const top1 = useTransform(scrollYProgress, [0, 0.7], ['0%', '70%'])
-  const opacity1 = useTransform(scrollYProgress, [0.7, 1], [1, 0])
+  const opacity1 = useTransform(scrollYProgress, [0, 0.431596, 0.7], [1, 0.5, 0])
 
-  const left2 = useTransform(scrollYProgress, [0, 0.7], ['34.33%', '27.5%'])
-  const width2 = useTransform(scrollYProgress, [0, 0.7, 1], ['31.33%', '45%', '15%'])
+  const left2 = useTransform(scrollYProgress, [0, 0.7], ['29.29%', '27.5%'])
+  const width2 = useTransform(scrollYProgress, [0, 0.7, 1], ['41.43%', '59.51%', '19.84%'])
   const top2 = useTransform(scrollYProgress, [0, 0.7], ['0%', '72%'])
-  const opacity2 = useTransform(scrollYProgress, [0.7, 1], [1, 0])
+  const opacity2 = useTransform(scrollYProgress, [0, 0.431596, 0.7], [1, 0.5, 0])
 
-  const left3 = useTransform(scrollYProgress, [0, 0.7], ['68.66%', '27.5%'])
-  const width3 = useTransform(scrollYProgress, [0, 0.7, 1], ['31.33%', '45%', '15%'])
+  const left3 = useTransform(scrollYProgress, [0, 0.7], ['71.37%', '27.5%'])
+  const width3 = useTransform(scrollYProgress, [0, 0.7, 1], ['28.64%', '45%', '15%'])
   const top3 = useTransform(scrollYProgress, [0, 0.7], ['0%', '74%'])
-  const opacity3 = useTransform(scrollYProgress, [0.7, 1], [1, 0])
+  const opacity3 = useTransform(scrollYProgress, [0, 0.431596, 0.7], [1, 0.5, 0])
 
   return (
     <div className="collage-reveal" ref={ref}>

@@ -126,8 +126,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  right: 40px;
-  width: auto;
+  width: 45vw;
 }
 .netflix-pitch-muted {
   color: var(--dl-color-default-textmute1);
@@ -195,12 +194,13 @@ h3.netflix-pitch-gradient-text {
   gap: 32px;
 }
 .netflix-pitch-ai-shipped-row .netflix-pitch-subsection-narrow {
+  width: 39.8%;
   margin-top: 39.6%;
   flex-shrink: 0;
 }
 .netflix-pitch-ai-shipped-video-frame {
   position: relative;
-  width: 50%;
+  width: 57.5%;
   aspect-ratio: 688 / 600;
   overflow: hidden;
   flex-shrink: 0;
@@ -299,6 +299,9 @@ h3.netflix-pitch-gradient-text {
   left: 6.17%;
 }
 
+.netflix-pitch-agentic-heading {
+  margin-top: 70px;
+}
 .netflix-pitch-agentic-row {
   width: 100%;
   display: flex;
@@ -306,7 +309,7 @@ h3.netflix-pitch-gradient-text {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 32px;
-  margin-top: 70px;
+  margin-top: 16px;
 }
 .netflix-pitch-agentic-row .netflix-pitch-subsection-narrow {
   flex-shrink: 0;
@@ -336,6 +339,16 @@ h3.netflix-pitch-gradient-text {
 }
 .netflix-pitch-walk-label {
   color: var(--dl-color-default-textmute1);
+}
+.netflix-pitch-walk-label-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.netflix-pitch-walk-label-icon-img {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
 }
 .netflix-pitch-walk-video {
   display: block;
@@ -370,6 +383,16 @@ h3.netflix-pitch-gradient-text {
 }
 .netflix-pitch-concept-card h3 {
   color: var(--dl-color-default-textdefault);
+}
+.netflix-pitch-concept-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.netflix-pitch-concept-title-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 .netflix-pitch-concept-card p {
   color: var(--dl-color-default-textgreyout1);

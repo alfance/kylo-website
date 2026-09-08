@@ -12,7 +12,15 @@ import './netflix-live-capture.css'
 const ConceptCard = ({ tag, title, children }) => (
   <div className="netflix-pitch-concept-card">
     <span className="netflix-pitch-concept-tag Epilogue-17Bold">{tag}</span>
-    <h3 className="Epilogue-24Bold">{title}</h3>
+    <h3 className="Epilogue-24Bold netflix-pitch-concept-title">
+      <img
+        src="/external/netflix-live-capture/ai-icon.svg"
+        alt=""
+        aria-hidden="true"
+        className="netflix-pitch-concept-title-icon"
+      />
+      {title}
+    </h3>
     {children}
   </div>
 )
@@ -245,11 +253,12 @@ const NetflixLiveCapture = (props) => {
               </div>
             </div>
 
+            <h3 className="netflix-pitch-gradient-text Epilogue-24Bold netflix-pitch-agentic-heading">
+              2. Agentic Concepts for Production Workflows
+            </h3>
+
             <div className="netflix-pitch-agentic-row">
               <div className="netflix-pitch-subsection netflix-pitch-subsection-narrow">
-                <h3 className="netflix-pitch-gradient-text Epilogue-24Bold">
-                  2. Agentic Concepts for Production Workflows
-                </h3>
                 <p className="netflix-pitch-muted Epilogue-17">
                   An early concept I haven't shipped, meant to show how I'd
                   approach AI-assisted tooling for artists.
@@ -312,7 +321,13 @@ const NetflixLiveCapture = (props) => {
                 ></video>
               </div>
               <div className="netflix-pitch-walk-item">
-                <span className="netflix-pitch-walk-label Epilogue-17">
+                <span className="netflix-pitch-walk-label Epilogue-17 netflix-pitch-walk-label-icon">
+                  <img
+                    src="/external/netflix-live-capture/ai-icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                    className="netflix-pitch-walk-label-icon-img"
+                  />
                   Post-stabilization to remove jitter and camera shocks.
                 </span>
                 <video
