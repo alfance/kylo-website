@@ -194,13 +194,13 @@ h3.netflix-pitch-gradient-text {
   gap: 32px;
 }
 .netflix-pitch-ai-shipped-row .netflix-pitch-subsection-narrow {
-  width: 39.8%;
+  width: 31.2%;
   margin-top: 39.6%;
   flex-shrink: 0;
 }
 .netflix-pitch-ai-shipped-video-frame {
   position: relative;
-  width: 57.5%;
+  width: 66.125%;
   aspect-ratio: 688 / 600;
   overflow: hidden;
   flex-shrink: 0;
@@ -248,6 +248,10 @@ h3.netflix-pitch-gradient-text {
   display: flex;
   justify-content: center;
   padding: 40px 40px 0;
+  margin-top: 16px;
+}
+.netflix-pitch-focus-label {
+  color: var(--dl-color-danger-500);
   margin-top: calc(-18px + 20%);
 }
 .netflix-pitch-focus-group {
@@ -290,6 +294,9 @@ h3.netflix-pitch-gradient-text {
 }
 
 .netflix-pitch-focus-row-alt {
+  margin-top: 16px;
+}
+.netflix-pitch-focus-label-alt {
   margin-top: 32px;
 }
 .netflix-pitch-focus-row-alt .netflix-pitch-focus-editor {

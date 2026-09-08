@@ -191,6 +191,9 @@ const NetflixLiveCapture = (props) => {
               />
             </div>
 
+            <p className="Epilogue-17 netflix-pitch-focus-label">
+              Adjust camera focus in app, live sync in Unity scene.
+            </p>
             <div className="netflix-pitch-focus-row">
               <div className="netflix-pitch-focus-group">
                 <video
@@ -222,6 +225,9 @@ const NetflixLiveCapture = (props) => {
               </div>
             </div>
 
+            <p className="Epilogue-17 netflix-pitch-focus-label netflix-pitch-focus-label-alt">
+              Record a walk cycle camera movement.
+            </p>
             <div className="netflix-pitch-focus-row netflix-pitch-focus-row-alt">
               <div className="netflix-pitch-focus-group">
                 <video
