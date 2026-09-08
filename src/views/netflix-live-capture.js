@@ -6,6 +6,7 @@ import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import ScatteredShowcase from '../components/scattered-showcase'
 import UxShowcase from '../components/ux-showcase'
+import CollageReveal from '../components/collage-reveal'
 import './netflix-live-capture.css'
 
 const ConceptCard = ({ tag, title, children }) => (
@@ -21,6 +22,7 @@ const FixItem = ({ label }) => <li className="Epilogue-17">{label}</li>
 const NetflixLiveCapture = (props) => {
   const walkOldRef = useRef(null)
   const walkNewRef = useRef(null)
+  const shippedVideoRef = useRef(null)
 
   const replayWalkVideosTogether = () => {
     const oldVideo = walkOldRef.current
@@ -115,13 +117,18 @@ const NetflixLiveCapture = (props) => {
           </section>
 
           <section className="netflix-pitch-section">
-            <span className="netflix-pitch-kicker Epilogue-17Bold">
-              AI Enablement ·{' '}
-              <span className="netflix-pitch-gradient-text">2026</span>
-            </span>
-            <h2 className="netflix-pitch-heading Epilogue-36Bold">
-              Where AI Takes It Further
-            </h2>
+            <div className="netflix-pitch-hero-row">
+              <div className="netflix-pitch-hero-text">
+                <span className="netflix-pitch-kicker Epilogue-17Bold">
+                  AI Enablement ·{' '}
+                  <span className="netflix-pitch-gradient-text">2026</span>
+                </span>
+                <h2 className="netflix-pitch-heading Epilogue-36Bold">
+                  Where AI Takes It Further
+                </h2>
+              </div>
+              <CollageReveal targetRef={shippedVideoRef} />
+            </div>
 
             <div className="netflix-pitch-ai-shipped-row">
               <div className="netflix-pitch-subsection netflix-pitch-subsection-narrow">
@@ -154,7 +161,10 @@ const NetflixLiveCapture = (props) => {
                   </li>
                 </ul>
               </div>
-              <div className="netflix-pitch-ai-shipped-video-frame">
+              <div
+                className="netflix-pitch-ai-shipped-video-frame"
+                ref={shippedVideoRef}
+              >
                 <video
                   src="/external/netflix-live-capture/2026-take-shot-crop-1.mp4"
                   loop="true"
@@ -187,15 +197,54 @@ const NetflixLiveCapture = (props) => {
                   playsInline="true"
                   className="netflix-pitch-focus-editor"
                 ></video>
+                <div className="netflix-pitch-focus-ipad">
+                  <video
+                    src="/external/netflix-live-capture/focus-ipad.mp4"
+                    loop="true"
+                    muted="true"
+                    preload="auto"
+                    autoPlay="true"
+                    playsInline="true"
+                    className="netflix-pitch-focus-ipad-video"
+                  ></video>
+                  <img
+                    src="/external/netflix-live-capture/iPad%20Pro%2011-Inch.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="netflix-pitch-focus-ipad-frame"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="netflix-pitch-focus-row netflix-pitch-focus-row-alt">
+              <div className="netflix-pitch-focus-group">
                 <video
-                  src="/external/netflix-live-capture/focus-ipad.mp4"
+                  src="/external/netflix-live-capture/2026-take-shot-editor%20-%20recording-final.mp4"
                   loop="true"
                   muted="true"
                   preload="auto"
                   autoPlay="true"
                   playsInline="true"
-                  className="netflix-pitch-focus-ipad"
+                  className="netflix-pitch-focus-editor"
                 ></video>
+                <div className="netflix-pitch-focus-ipad">
+                  <video
+                    src="/external/netflix-live-capture/ipad-screenshot-recording.mp4"
+                    loop="true"
+                    muted="true"
+                    preload="auto"
+                    autoPlay="true"
+                    playsInline="true"
+                    className="netflix-pitch-focus-ipad-video"
+                  ></video>
+                  <img
+                    src="/external/netflix-live-capture/iPad%20Pro%2011-Inch.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="netflix-pitch-focus-ipad-frame"
+                  />
+                </div>
               </div>
             </div>
 

@@ -1,0 +1,11 @@
+.collage-reveal {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 688 / 600;
+}
+.collage-reveal-image {
+  position: absolute;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
