@@ -195,7 +195,7 @@ h3.netflix-pitch-gradient-text {
 }
 .netflix-pitch-ai-shipped-row .netflix-pitch-subsection-narrow {
   width: 31.2%;
-  margin-top: 39.6%;
+  margin-top: 31.68%;
   flex-shrink: 0;
 }
 .netflix-pitch-ai-shipped-video-frame {
@@ -208,7 +208,7 @@ h3.netflix-pitch-gradient-text {
   /* margin scales with section width so it always clears the collage's
      own width-driven height (collage height ~= 0.87 * (50% - 40px)),
      plus a steady ~200px gap below it, regardless of viewport width */
-  margin-top: 23.1%;
+  margin-top: 18.48%;
   z-index: 4;
 }
 .netflix-pitch-ai-shipped-video {

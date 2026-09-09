@@ -22,7 +22,7 @@ const Navbar = (props) => {
             className="navbar-line1"
           />
           <a
-            href="https://drive.google.com/file/d/1NZxi7yjL2PXZbltFw0ICe7tOkqNk9niL/view?usp=sharing"
+            href="https://drive.google.com/file/d/1pf-K4nsJG9lPTHShoaYy4l0it_5MMkb6/view?usp=sharing"
             target="_blank"
             rel="noreferrer noopener"
             className="navbar-text3"
