@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kylo-website/static/css/main.cf1415f0.css",
-    "main.js": "/kylo-website/static/js/main.177c43fa.js",
+    "main.css": "/kylo-website/static/css/main.d96ac3b1.css",
+    "main.js": "/kylo-website/static/js/main.320c9199.js",
     "index.html": "/kylo-website/index.html",
-    "main.cf1415f0.css.map": "/kylo-website/static/css/main.cf1415f0.css.map",
-    "main.177c43fa.js.map": "/kylo-website/static/js/main.177c43fa.js.map"
+    "main.d96ac3b1.css.map": "/kylo-website/static/css/main.d96ac3b1.css.map",
+    "main.320c9199.js.map": "/kylo-website/static/js/main.320c9199.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf1415f0.css",
-    "static/js/main.177c43fa.js"
+    "static/css/main.d96ac3b1.css",
+    "static/js/main.320c9199.js"
   ]
 }
