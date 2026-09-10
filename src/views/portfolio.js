@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import AnimateOnReveal from '../components/animate-on-reveal'
 import './portfolio.css'
 
 const Portfolio = (props) => {
@@ -62,22 +63,135 @@ const Portfolio = (props) => {
         </div>
         <div className="portfolio-portfolio1 port-container-responsive">
           <div className="portfolio-latestwork-section">
-            <animate-on-reveal animation="fadeInUp">
-              <span
-                data-thq-animate-on-reveal="true"
-                className="portfolio-text10 Epilogue-36Light"
-              >
-                <span>Projects &amp; Work</span>
+            <AnimateOnReveal animation="fadeInUp">
+              <span className="portfolio-text10 Epilogue-36Light">
+                <span>Expriences &amp; Works</span>
               </span>
-            </animate-on-reveal>
+            </AnimateOnReveal>
             <div className="portfolio-workcards">
+              <div className="portfolio-workcard06">
+                <div className="portfolio-workcard-locked-aspect-ratio4">
+                  <div className="portfolio-workcard07">
+                    <div className="portfolio-workcard-locked-aspect-ratio5">
+                      <div className="portfolio-workcard08">
+                        <AnimateOnReveal
+                          animation="fadeInUp"
+                          duration="300ms"
+                          delay="0s"
+                          direction="normal"
+                          easing="ease"
+                          iteration="1"
+                        >
+                          <div className="portfolio-headline-subhead04">
+                            <div className="portfolio-frame22 home-headline-align">
+                              <span className="portfolio-text26">
+                                <span>
+                                  <img
+                                    src="/external/netflix-live-capture/Netflix%20Logo.png"
+                                    alt="Netflix"
+                                    className="portfolio-netflix-logo"
+                                  />{' '}
+                                  Games Tooling Enablement{' '}
+                                </span>
+                                <span className="portfolio-text28">
+                                  2024 - 2026
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </AnimateOnReveal>
+                        <span className="portfolio-text30 Epilogue-17">
+                          <span>
+                            Designed internal tools spanning the game dev
+                            pipeline (account provisioning, upload pipeline,
+                            cloud distribution, playtesting), plus
+                            performance testing and debugging/analytics
+                            tooling that give developers end-to-end
+                            visibility into game health.
+                          </span>
+                        </span>
+                        <div className="portfolio-homecontentimage-locked-aspect-ratio03">
+                          <div className="portfolio-homecontentimage03">
+                            <div className="portfolio-homecontentimage04 image-contain portfolio-homecontentimage04-no-texture">
+                              <div className="portfolio-image-placeholder">
+                                Image placeholder
+                              </div>
+                            </div>
+                          </div>
+                          <div className="portfolio-frame06"></div>
+                        </div>
+                      </div>
+                      <div className="portfolio-frame07"></div>
+                    </div>
+                  </div>
+                  <div className="portfolio-frame08"></div>
+                </div>
+              </div>
+
+              <div className="portfolio-workcard06">
+                <div className="portfolio-workcard-locked-aspect-ratio4">
+                  <div className="portfolio-workcard07">
+                    <div className="portfolio-workcard-locked-aspect-ratio5">
+                      <div className="portfolio-workcard08">
+                        <AnimateOnReveal
+                          animation="fadeInUp"
+                          duration="300ms"
+                          delay="0s"
+                          direction="normal"
+                          easing="ease"
+                          iteration="1"
+                        >
+                          <div className="portfolio-headline-subhead04">
+                            <div className="portfolio-frame22 home-headline-align">
+                              <span className="portfolio-text26">
+                                <span>
+                                  <img
+                                    src="/external/netflix-live-capture/Netflix%20Logo.png"
+                                    alt="Netflix"
+                                    className="portfolio-netflix-logo"
+                                  />{' '}
+                                  AI Initiatives{' '}
+                                </span>
+                                <span className="portfolio-text28">2026</span>
+                              </span>
+                            </div>
+                          </div>
+                        </AnimateOnReveal>
+                        <span className="portfolio-text30 Epilogue-17">
+                          <span>
+                            Led AI discovery and skill education across the
+                            org, enabling teams to prototype and vibe-code
+                            directly in dev repos. Also led discovery for AI
+                            Cortex, exploring a new design paradigm where AI
+                            is the primary user and humans provide direction
+                            rather than direct input.
+                          </span>
+                        </span>
+                        <div className="portfolio-homecontentimage-locked-aspect-ratio03">
+                          <div className="portfolio-homecontentimage03">
+                            <div className="portfolio-homecontentimage04 image-contain portfolio-homecontentimage04-no-texture">
+                              <div className="portfolio-image-placeholder">
+                                Image placeholder
+                              </div>
+                            </div>
+                          </div>
+                          <div className="portfolio-frame06"></div>
+                        </div>
+                      </div>
+                      <div className="portfolio-frame07"></div>
+                    </div>
+                  </div>
+                  <div className="portfolio-frame08"></div>
+                </div>
+              </div>
+
               <Link to="/portfolioproject1" className="portfolio-navlink">
                 <div className="portfolio-workcard">
                   <div className="portfolio-workcard-locked-aspect-ratio">
                     <div className="portfolio-workcard01">
                       <div className="portfolio-workcard-locked-aspect-ratio1">
                         <div className="portfolio-workcard02">
-                          <animate-on-reveal
+                          <AnimateOnReveal
                             animation="fadeInUp"
                             duration="300ms"
                             delay="0s"
@@ -85,10 +199,7 @@ const Portfolio = (props) => {
                             easing="ease"
                             iteration="1"
                           >
-                            <div
-                              data-thq-animate-on-reveal="true"
-                              className="portfolio-headline-subhead02"
-                            >
+                            <div className="portfolio-headline-subhead02">
                               <div className="portfolio-frame2 home-headline-align">
                                 <span className="portfolio-text12">
                                   <span className="Epilogue-36Light">
@@ -119,7 +230,7 @@ const Portfolio = (props) => {
                                 hassle of manual keyframing.
                               </span>
                             </div>
-                          </animate-on-reveal>
+                          </AnimateOnReveal>
                           <div className="portfolio-homecontentimage-locked-aspect-ratio">
                             <div className="portfolio-homecontentimage">
                               <img
@@ -151,7 +262,7 @@ const Portfolio = (props) => {
                         className="portfolio-navlink1"
                       >
                         <div className="portfolio-workcard05">
-                          <animate-on-reveal
+                          <AnimateOnReveal
                             animation="fadeInUp"
                             duration="300ms"
                             delay="0s"
@@ -159,10 +270,7 @@ const Portfolio = (props) => {
                             easing="ease"
                             iteration="1"
                           >
-                            <div
-                              data-thq-animate-on-reveal="true"
-                              className="portfolio-headline-subhead03"
-                            >
+                            <div className="portfolio-headline-subhead03">
                               <div className="portfolio-frame21 home-headline-align">
                                 <span className="portfolio-text19">
                                   <span className="Epilogue-36Bold">
@@ -196,7 +304,7 @@ const Portfolio = (props) => {
                                 </span>
                               </span>
                             </div>
-                          </animate-on-reveal>
+                          </AnimateOnReveal>
                           <div className="portfolio-homecontentimage-locked-aspect-ratio01">
                             <div className="portfolio-homecontentimage01 background-contain image-contain">
                               <div className="portfolio-homecontentimage-locked-aspect-ratio02 image-contain">
@@ -220,10 +328,15 @@ const Portfolio = (props) => {
                     <div className="portfolio-workcard07">
                       <div className="portfolio-workcard-locked-aspect-ratio5">
                         <div className="portfolio-workcard08">
-                            <div
-                              data-thq-animate-on-reveal="true"
-                              className="portfolio-headline-subhead04"
+                            <AnimateOnReveal
+                              animation="fadeInUp"
+                              duration="300ms"
+                              delay="0s"
+                              direction="normal"
+                              easing="ease"
+                              iteration="1"
                             >
+                              <div className="portfolio-headline-subhead04">
                               <div className="portfolio-frame22 home-headline-align">
                                 <span className="portfolio-text26">
                                   <span>Unity Virtual Production </span>
@@ -236,6 +349,7 @@ const Portfolio = (props) => {
                                 </span>
                               </div>
                             </div>
+                            </AnimateOnReveal>
                           <span className="portfolio-text30 Epilogue-17">
                             <span>
                               Unity&apos;s toolkit for TV, broadcast, and

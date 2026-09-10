@@ -486,6 +486,12 @@
   align-items: center;
   flex-shrink: 0;
 }
+.portfolio-netflix-logo {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 6px;
+}
 .portfolio-text26 {
   color: var(--dl-color-default-textdefault);
   height: auto;
@@ -559,6 +565,20 @@
   width: 39%;
   height: 35%;
   position: absolute;
+}
+.portfolio-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+}
+.portfolio-homecontentimage04-no-texture {
+  background-image: none;
 }
 .portfolio-frame06 {
   display: flex;

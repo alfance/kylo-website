@@ -19,7 +19,7 @@ const ConceptCard = ({ tag, title, children }) => (
         aria-hidden="true"
         className="netflix-pitch-concept-title-icon"
       />
-      {title}
+      <span>{title}</span>
     </h3>
     {children}
   </div>
@@ -346,6 +346,68 @@ const NetflixLiveCapture = (props) => {
                   onEnded={replayWalkVideosTogether}
                   className="netflix-pitch-walk-video"
                 ></video>
+              </div>
+            </div>
+
+            <div className="netflix-pitch-agentic-row netflix-pitch-agentic-row-2">
+              <div className="netflix-pitch-subsection netflix-pitch-subsection-narrow">
+                <div className="netflix-pitch-concepts">
+                  <ConceptCard
+                    tag="Proof of Concept"
+                    title={
+                      <>
+                        <span className="netflix-pitch-concept-title-highlight">
+                          Smart Lens
+                        </span>
+                        <span className="netflix-pitch-concept-title-muted">
+                          : AI-Assisted Shot Setup for Companion App
+                        </span>
+                      </>
+                    }
+                  >
+                    <p className="Epilogue-17">
+                      Describe the shot you want in{' '}
+                      <strong className="Epilogue-17Bold netflix-pitch-concept-desc-highlight">
+                        plain language
+                      </strong>
+                      , and{' '}
+                      <strong className="Epilogue-17Bold netflix-pitch-concept-desc-highlight">
+                        Smart Lens configures the camera for you
+                      </strong>{' '}
+                      (focus, framing, and stabilization) instead of you
+                      hand-tuning six different sliders mid-shoot.
+                    </p>
+                    <ul className="netflix-pitch-concept-bullet-list">
+                      <li className="Epilogue-17">
+                        Natural-language shot input.
+                      </li>
+                      <li className="Epilogue-17">
+                        One-tap application with visual confirmation.
+                      </li>
+                      <li className="Epilogue-17">
+                        Lives under the existing Reset/Reposition menu on the
+                        companion app (iPad/iPhone).
+                      </li>
+                    </ul>
+                  </ConceptCard>
+                </div>
+              </div>
+              <div className="netflix-pitch-agentic-phone">
+                <video
+                  src="/external/netflix-live-capture/smart-lens2-crop.mp4"
+                  loop="true"
+                  muted="true"
+                  preload="auto"
+                  autoPlay="true"
+                  playsInline="true"
+                  className="netflix-pitch-agentic-phone-video"
+                ></video>
+                <img
+                  src="/external/netflix-live-capture/iphone-frame.png"
+                  alt=""
+                  aria-hidden="true"
+                  className="netflix-pitch-agentic-phone-frame"
+                />
               </div>
             </div>
           </section>
