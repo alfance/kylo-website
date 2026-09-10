@@ -57,7 +57,7 @@ Navbar.defaultProps = {
   text: 'About',
   linkText3:
     'https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-portfolio22&utm_medium=figma-samples',
-  line1Src: '/external/line1i176-mq9.svg',
+  line1Src: 'external/line1i176-mq9.svg',
   text2: 'Resume',
   text4: 'Kylo Xue',
   linkText2:

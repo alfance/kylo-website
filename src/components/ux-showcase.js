@@ -21,24 +21,24 @@ const UxShowcase = () => {
   return (
     <div className="ux-showcase-bleed">
       <img
-        src="/external/netflix-live-capture/gradient%202.png"
+        src="external/netflix-live-capture/gradient%202.png"
         alt=""
         aria-hidden="true"
         className="ux-gradient"
       />
       <img
-        src="/external/netflix-live-capture/default%20window%20view-%20new.png"
+        src="external/netflix-live-capture/default%20window%20view-%20new.png"
         alt="Unity Editor scene view"
         className="ux-window"
       />
       <motion.div ref={ref} style={style} className="ux-take-controller">
         <SwapImage
-          src="/external/netflix-live-capture/take%20controller%20-%20new.png"
+          src="external/netflix-live-capture/take%20controller%20-%20new.png"
           alt="Take Recorder window"
           active={!isRecording}
         />
         <SwapImage
-          src="/external/netflix-live-capture/take%20controller%20-%20recording.png"
+          src="external/netflix-live-capture/take%20controller%20-%20recording.png"
           alt="Take Recorder window, recording"
           active={isRecording}
         />
@@ -46,24 +46,24 @@ const UxShowcase = () => {
       <div className="ux-devices">
         <div className="ux-device ux-device-iphone">
           <SwapImage
-            src="/external/netflix-live-capture/new%20app%20-%20iphone.png"
+            src="external/netflix-live-capture/new%20app%20-%20iphone.png"
             alt="New Virtual Camera app on iPhone"
             active={!isRecording}
           />
           <SwapImage
-            src="/external/netflix-live-capture/new%20app%20-%20iphone%20recording.png"
+            src="external/netflix-live-capture/new%20app%20-%20iphone%20recording.png"
             alt="New Virtual Camera app on iPhone, recording"
             active={isRecording}
           />
         </div>
         <div className="ux-device ux-device-ipad">
           <SwapImage
-            src="/external/netflix-live-capture/new%20app%20-%20ipad.png"
+            src="external/netflix-live-capture/new%20app%20-%20ipad.png"
             alt="New Virtual Camera app on iPad"
             active={!isRecording}
           />
           <SwapImage
-            src="/external/netflix-live-capture/new%20app%20-%20ipad%20recording.png"
+            src="external/netflix-live-capture/new%20app%20-%20ipad%20recording.png"
             alt="New Virtual Camera app on iPad, recording"
             active={isRecording}
           />

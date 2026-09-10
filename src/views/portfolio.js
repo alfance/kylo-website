@@ -19,10 +19,10 @@ const Portfolio = (props) => {
         <div className="portfolio-header">
           <div className="portfolio-header1 content-divide">
             <video
-              src="/external/10-gradient-depth-copy-6.mp4"
+              src="external/10-gradient-depth-copy-6.mp4"
               loop="true"
               muted="true"
-              poster="/external/10-gradient-depth-copy-6-1500h.jpg"
+              poster="external/10-gradient-depth-copy-6-1500h.jpg"
               preload="auto"
               autoPlay="true"
               className="portfolio-video"
@@ -87,7 +87,7 @@ const Portfolio = (props) => {
                               <span className="portfolio-text26">
                                 <span>
                                   <img
-                                    src="/external/netflix-live-capture/Netflix%20Logo.png"
+                                    src="external/netflix-live-capture/Netflix%20Logo.png"
                                     alt="Netflix"
                                     className="portfolio-netflix-logo"
                                   />{' '}
@@ -146,7 +146,7 @@ const Portfolio = (props) => {
                               <span className="portfolio-text26">
                                 <span>
                                   <img
-                                    src="/external/netflix-live-capture/Netflix%20Logo.png"
+                                    src="external/netflix-live-capture/Netflix%20Logo.png"
                                     alt="Netflix"
                                     className="portfolio-netflix-logo"
                                   />{' '}
@@ -235,12 +235,12 @@ const Portfolio = (props) => {
                             <div className="portfolio-homecontentimage">
                               <img
                                 alt="image"
-                                src="/external/face-cap2-mac-case.gif"
+                                src="external/face-cap2-mac-case.gif"
                                 className="portfolio-image"
                               />
                               <img
                                 alt="image"
-                                src="/external/face-cap2-iphone-case.gif"
+                                src="external/face-cap2-iphone-case.gif"
                                 className="portfolio-image1"
                               />
                             </div>
@@ -365,7 +365,7 @@ const Portfolio = (props) => {
                               <div className="portfolio-homecontentimage04 image-contain">
                                 <img
                                   alt="vsethomegif1I176"
-                                  src="/external/vset-home-gif.gif"
+                                  src="external/vset-home-gif.gif"
                                   className="portfolio-vsethomegif1"
                                 />
                               </div>

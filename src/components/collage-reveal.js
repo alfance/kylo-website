@@ -29,19 +29,19 @@ const CollageReveal = () => {
   return (
     <div className="collage-reveal" ref={ref}>
       <motion.img
-        src="/external/netflix-live-capture/collage-connection.png"
+        src="external/netflix-live-capture/collage-connection.png"
         alt="Connections panel"
         className="collage-reveal-image"
         style={{ left: left1, top: top1, width: width1, opacity: opacity1, zIndex: 1 }}
       />
       <motion.img
-        src="/external/netflix-live-capture/collage-new%20take%20recorder.png"
+        src="external/netflix-live-capture/collage-new%20take%20recorder.png"
         alt="Take Recorder panel"
         className="collage-reveal-image"
         style={{ left: left2, top: top2, width: width2, opacity: opacity2, zIndex: 2 }}
       />
       <motion.img
-        src="/external/netflix-live-capture/collage-sync.png"
+        src="external/netflix-live-capture/collage-sync.png"
         alt="Sync panel"
         className="collage-reveal-image"
         style={{ left: left3, top: top3, width: width3, opacity: opacity3, zIndex: 3 }}

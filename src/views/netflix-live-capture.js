@@ -14,7 +14,7 @@ const ConceptCard = ({ tag, title, children }) => (
     <span className="netflix-pitch-concept-tag Epilogue-17Bold">{tag}</span>
     <h3 className="Epilogue-24Bold netflix-pitch-concept-title">
       <img
-        src="/external/netflix-live-capture/ai-icon.svg"
+        src="external/netflix-live-capture/ai-icon.svg"
         alt=""
         aria-hidden="true"
         className="netflix-pitch-concept-title-icon"
@@ -114,7 +114,7 @@ const NetflixLiveCapture = (props) => {
             </div>
             <div className="netflix-pitch-arrows-bleed">
               <img
-                src="/external/netflix-live-capture/arrows-phase-change.png"
+                src="external/netflix-live-capture/arrows-phase-change.png"
                 alt=""
                 aria-hidden="true"
                 className="netflix-pitch-arrows"
@@ -171,7 +171,7 @@ const NetflixLiveCapture = (props) => {
               </ul>
               <div className="netflix-pitch-ai-shipped-video-frame">
                 <video
-                  src="/external/netflix-live-capture/2026-take-shot-crop-1.mp4"
+                  src="external/netflix-live-capture/2026-take-shot-crop-1.mp4"
                   loop="true"
                   muted="true"
                   preload="auto"
@@ -184,7 +184,7 @@ const NetflixLiveCapture = (props) => {
 
             <div className="netflix-pitch-focus-gradient-bleed">
               <img
-                src="/external/netflix-live-capture/gradient%205.png"
+                src="external/netflix-live-capture/gradient%205.png"
                 alt=""
                 aria-hidden="true"
                 className="netflix-pitch-focus-gradient"
@@ -197,7 +197,7 @@ const NetflixLiveCapture = (props) => {
             <div className="netflix-pitch-focus-row">
               <div className="netflix-pitch-focus-group">
                 <video
-                  src="/external/netflix-live-capture/focus-editor.mp4"
+                  src="external/netflix-live-capture/focus-editor.mp4"
                   loop="true"
                   muted="true"
                   preload="auto"
@@ -207,7 +207,7 @@ const NetflixLiveCapture = (props) => {
                 ></video>
                 <div className="netflix-pitch-focus-ipad">
                   <video
-                    src="/external/netflix-live-capture/focus-ipad.mp4"
+                    src="external/netflix-live-capture/focus-ipad.mp4"
                     loop="true"
                     muted="true"
                     preload="auto"
@@ -216,7 +216,7 @@ const NetflixLiveCapture = (props) => {
                     className="netflix-pitch-focus-ipad-video"
                   ></video>
                   <img
-                    src="/external/netflix-live-capture/iPad%20Pro%2011-Inch.png"
+                    src="external/netflix-live-capture/iPad%20Pro%2011-Inch.png"
                     alt=""
                     aria-hidden="true"
                     className="netflix-pitch-focus-ipad-frame"
@@ -231,7 +231,7 @@ const NetflixLiveCapture = (props) => {
             <div className="netflix-pitch-focus-row netflix-pitch-focus-row-alt">
               <div className="netflix-pitch-focus-group">
                 <video
-                  src="/external/netflix-live-capture/2026-take-shot-editor%20-%20recording-final.mp4"
+                  src="external/netflix-live-capture/2026-take-shot-editor%20-%20recording-final.mp4"
                   loop="true"
                   muted="true"
                   preload="auto"
@@ -241,7 +241,7 @@ const NetflixLiveCapture = (props) => {
                 ></video>
                 <div className="netflix-pitch-focus-ipad">
                   <video
-                    src="/external/netflix-live-capture/ipad-screenshot-recording.mp4"
+                    src="external/netflix-live-capture/ipad-screenshot-recording.mp4"
                     loop="true"
                     muted="true"
                     preload="auto"
@@ -250,7 +250,7 @@ const NetflixLiveCapture = (props) => {
                     className="netflix-pitch-focus-ipad-video"
                   ></video>
                   <img
-                    src="/external/netflix-live-capture/iPad%20Pro%2011-Inch.png"
+                    src="external/netflix-live-capture/iPad%20Pro%2011-Inch.png"
                     alt=""
                     aria-hidden="true"
                     className="netflix-pitch-focus-ipad-frame"
@@ -300,7 +300,7 @@ const NetflixLiveCapture = (props) => {
                 </div>
               </div>
               <video
-                src="/external/netflix-live-capture/stable-ui.mp4"
+                src="external/netflix-live-capture/stable-ui.mp4"
                 loop="true"
                 muted="true"
                 preload="auto"
@@ -317,7 +317,7 @@ const NetflixLiveCapture = (props) => {
                 </span>
                 <video
                   ref={walkOldRef}
-                  src="/external/netflix-live-capture/walk-old.mp4"
+                  src="external/netflix-live-capture/walk-old.mp4"
                   muted="true"
                   preload="auto"
                   autoPlay="true"
@@ -329,7 +329,7 @@ const NetflixLiveCapture = (props) => {
               <div className="netflix-pitch-walk-item">
                 <span className="netflix-pitch-walk-label Epilogue-17 netflix-pitch-walk-label-icon">
                   <img
-                    src="/external/netflix-live-capture/ai-icon.svg"
+                    src="external/netflix-live-capture/ai-icon.svg"
                     alt=""
                     aria-hidden="true"
                     className="netflix-pitch-walk-label-icon-img"
@@ -338,7 +338,7 @@ const NetflixLiveCapture = (props) => {
                 </span>
                 <video
                   ref={walkNewRef}
-                  src="/external/netflix-live-capture/walk-new.mp4"
+                  src="external/netflix-live-capture/walk-new.mp4"
                   muted="true"
                   preload="auto"
                   autoPlay="true"
@@ -394,7 +394,7 @@ const NetflixLiveCapture = (props) => {
               </div>
               <div className="netflix-pitch-agentic-phone">
                 <video
-                  src="/external/netflix-live-capture/smart-lens2-crop.mp4"
+                  src="external/netflix-live-capture/smart-lens2-crop.mp4"
                   loop="true"
                   muted="true"
                   preload="auto"
@@ -403,7 +403,7 @@ const NetflixLiveCapture = (props) => {
                   className="netflix-pitch-agentic-phone-video"
                 ></video>
                 <img
-                  src="/external/netflix-live-capture/iphone-frame.png"
+                  src="external/netflix-live-capture/iphone-frame.png"
                   alt=""
                   aria-hidden="true"
                   className="netflix-pitch-agentic-phone-frame"

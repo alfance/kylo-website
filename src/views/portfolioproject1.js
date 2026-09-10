@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import AnimateOnReveal from '../components/animate-on-reveal'
 import './portfolioproject1.css'
 
 const Portfolioproject1 = (props) => {
@@ -61,12 +62,12 @@ const Portfolioproject1 = (props) => {
             </section>
             <img
               alt="stickerfinallayer1I275"
-              src="/external/vcam-gif.gif"
+              src="external/vcam-gif.gif"
               className="portfolioproject1-stickerfinallayer1 content-divide-child image-contain"
             />
           </div>
           <div className="portfolioproject1-skills-section">
-            <animate-on-reveal
+            <AnimateOnReveal
               animation="fadeInUp"
               duration="300ms"
               delay="0s"
@@ -74,10 +75,7 @@ const Portfolioproject1 = (props) => {
               easing="ease"
               iteration="1"
             >
-              <div
-                data-thq-animate-on-reveal="true"
-                className="portfolioproject1-skills"
-              >
+              <div className="portfolioproject1-skills">
                 <div className="portfolioproject1-skill">
                   <div className="portfolioproject1-skill1">
                     <div className="portfolioproject1-imageplaceholder"></div>
@@ -131,7 +129,7 @@ const Portfolioproject1 = (props) => {
                   </div>
                 </div>
               </div>
-            </animate-on-reveal>
+            </AnimateOnReveal>
           </div>
           <div className="portfolioproject1-project-myrole">
             <div className="portfolioproject1-header">
@@ -237,7 +235,7 @@ const Portfolioproject1 = (props) => {
             <div className="portfolioproject1-stickerfinallayer1-locked-aspect-ratio image-contain">
               <img
                 alt="stickerfinallayer1I275"
-                src="/external/stickerfinallayer1i275-ln17.png"
+                src="external/stickerfinallayer1i275-ln17.png"
                 className="portfolioproject1-stickerfinallayer11"
               />
               <div className="portfolioproject1-frame"></div>
@@ -254,7 +252,7 @@ const Portfolioproject1 = (props) => {
             </div>
             <img
               alt="stickerfinallayer1I275"
-              src="/external/live%20cap-screenshots4.jpg"
+              src="external/live%20cap-screenshots4.jpg"
               className="portfolioproject1-stickerfinallayer12"
             />
           </div>
@@ -275,7 +273,7 @@ const Portfolioproject1 = (props) => {
                   <div className="portfolioproject1-titletop">
                     <img
                       alt="VirtualProductiondTakeRecorderI275"
-                      src="/external/virtualproductiondtakerecorderi275-dgwa.svg"
+                      src="external/virtualproductiondtakerecorderi275-dgwa.svg"
                       className="portfolioproject1-virtual-productiond-take-recorder"
                     />
                   </div>
@@ -345,7 +343,7 @@ const Portfolioproject1 = (props) => {
               </section>
               <img
                 alt="stickerfinallayer1I275"
-                src="/external/stickerfinallayer1i275-suu.png"
+                src="external/stickerfinallayer1i275-suu.png"
                 className="portfolioproject1-stickerfinallayer13 content-divide-child image-contain"
               />
             </div>
@@ -354,7 +352,7 @@ const Portfolioproject1 = (props) => {
             <div className="portfolioproject1-header2 Epilogue-17 content-divide-reverse">
               <img
                 alt="stickerfinallayer1I275"
-                src="/external/stickerfinallayer1i275-imhw.png"
+                src="external/stickerfinallayer1i275-imhw.png"
                 className="portfolioproject1-stickerfinallayer14 content-divide-child image-contain"
               />
               <section className="portfolioproject1-headline-subhead09 content-divide-child">
@@ -362,7 +360,7 @@ const Portfolioproject1 = (props) => {
                   <div className="portfolioproject1-titletop1">
                     <img
                       alt="VirtualProductiondVirtualCameraActorI275"
-                      src="/external/virtualproductiondvirtualcameraactori275-5fvm.svg"
+                      src="external/virtualproductiondvirtualcameraactori275-5fvm.svg"
                       className="portfolioproject1-virtual-productiond-virtual-camera-actor"
                     />
                   </div>
@@ -417,7 +415,7 @@ const Portfolioproject1 = (props) => {
                   <div className="portfolioproject1-titletop2">
                     <img
                       alt="InputGamepadI275"
-                      src="/external/inputgamepadi275-7m7q.svg"
+                      src="external/inputgamepadi275-7m7q.svg"
                       className="portfolioproject1-input-gamepad"
                     />
                   </div>
@@ -457,7 +455,7 @@ const Portfolioproject1 = (props) => {
               </section>
               <img
                 alt="stickerfinallayer1I275"
-                src="/external/stickerfinallayer1i275-1get.png"
+                src="external/stickerfinallayer1i275-1get.png"
                 className="portfolioproject1-stickerfinallayer15 content-divide-child image-contain"
               />
             </div>
@@ -467,12 +465,12 @@ const Portfolioproject1 = (props) => {
               <div className="portfolioproject1-frame3 content-divide-child">
                 <img
                   alt="stickerfinallayer16762"
-                  src="/external/stickerfinallayer16762-l5y.png"
+                  src="external/stickerfinallayer16762-l5y.png"
                   className="portfolioproject1-stickerfinallayer16 image-contain"
                 />
                 <img
                   alt="stickerfinallayer26762"
-                  src="/external/synchronization.gif"
+                  src="external/synchronization.gif"
                   className="portfolioproject1-stickerfinallayer2 image-contain"
                 />
               </div>
@@ -481,7 +479,7 @@ const Portfolioproject1 = (props) => {
                   <div className="portfolioproject1-titletop3">
                     <img
                       alt="EditorUIdSyncSearchI676"
-                      src="/external/editoruidsyncsearchi676-bd0ux.svg"
+                      src="external/editoruidsyncsearchi676-bd0ux.svg"
                       className="portfolioproject1-editor-u-id-sync-search"
                     />
                   </div>

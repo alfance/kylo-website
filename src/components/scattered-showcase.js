@@ -29,32 +29,32 @@ FloatingPanel.propTypes = {
 const panels = [
   {
     className: 'scattered-float-1',
-    src: '/external/netflix-live-capture/New.jpg',
+    src: 'external/netflix-live-capture/New.jpg',
     alt: 'Connection: Companion App Server panel',
   },
   {
     className: 'scattered-float-2',
-    src: '/external/netflix-live-capture/MainCamera.jpg',
+    src: 'external/netflix-live-capture/MainCamera.jpg',
     alt: 'Take Recorder Playback panel',
   },
   {
     className: 'scattered-float-3',
-    src: '/external/netflix-live-capture/Cinemachine%20Virtual%20Camera.jpg',
+    src: 'external/netflix-live-capture/Cinemachine%20Virtual%20Camera.jpg',
     alt: 'CinemachineVirtualCamera Inspector panel',
   },
   {
     className: 'scattered-float-4',
-    src: '/external/netflix-live-capture/virtual%20Camera%20device.jpg',
+    src: 'external/netflix-live-capture/virtual%20Camera%20device.jpg',
     alt: 'VirtualCameraDevice Inspector panel',
   },
   {
     className: 'scattered-float-5',
-    src: '/external/netflix-live-capture/Mask%20group-1.jpg',
+    src: 'external/netflix-live-capture/Mask%20group-1.jpg',
     alt: 'New Shot Library panel',
   },
   {
     className: 'scattered-float-6',
-    src: '/external/netflix-live-capture/Mask%20group.jpg',
+    src: 'external/netflix-live-capture/Mask%20group.jpg',
     alt: 'Timeline with Take Recorder tracks',
   },
 ]
@@ -65,7 +65,7 @@ const ScatteredShowcase = ({ backgroundSrc, backgroundAlt }) => {
   return (
     <div className="scattered-showcase-bleed">
       <img
-        src="/external/netflix-live-capture/gradient-arrow.png"
+        src="external/netflix-live-capture/gradient-arrow.png"
         alt=""
         aria-hidden="true"
         className="scattered-gradient"
@@ -85,12 +85,12 @@ const ScatteredShowcase = ({ backgroundSrc, backgroundAlt }) => {
       </div>
       <div className="scattered-devices">
         <img
-          src="/external/netflix-live-capture/old%20app%20-%20ipad.png"
+          src="external/netflix-live-capture/old%20app%20-%20ipad.png"
           alt="Old Virtual Camera app on iPad"
           className="scattered-device scattered-device-ipad"
         />
         <img
-          src="/external/netflix-live-capture/old%20app%20-%20iphone.png"
+          src="external/netflix-live-capture/old%20app%20-%20iphone.png"
           alt="Old Virtual Camera app on iPhone"
           className="scattered-device scattered-device-iphone"
         />
@@ -105,7 +105,7 @@ ScatteredShowcase.propTypes = {
 }
 
 ScatteredShowcase.defaultProps = {
-  backgroundSrc: '/external/netflix-live-capture/unity%20engine.png',
+  backgroundSrc: 'external/netflix-live-capture/unity%20engine.png',
   backgroundAlt: 'Unity Editor with scattered Live Capture panels highlighted',
 }
 

@@ -38,7 +38,7 @@ const Portfolioproject3 = (props) => {
             </div>
             <img
               alt="stickerfinallayer1I546"
-              src="/external/stickerfinallayer1i546-61mo.png"
+              src="external/stickerfinallayer1i546-61mo.png"
               className="portfolioproject3-stickerfinallayer1 content-divide-child image-contain"
             />
           </div>
@@ -137,7 +137,7 @@ const Portfolioproject3 = (props) => {
             <div className="portfolioproject3-stickerfinallayer1-locked-aspect-ratio">
               <img
                 alt="stickerfinallayer1I546"
-                src="/external/stickerfinallayer1i546-rus4f.png"
+                src="external/stickerfinallayer1i546-rus4f.png"
                 className="portfolioproject3-stickerfinallayer11 image-contain"
               />
               <div className="portfolioproject3-frame"></div>
@@ -152,7 +152,7 @@ const Portfolioproject3 = (props) => {
                     <div className="portfolioproject3-frame2d-video-player">
                       <img
                         alt="CombinedShapeI546"
-                        src="/external/combinedshapei546-cvv.svg"
+                        src="external/combinedshapei546-cvv.svg"
                         className="portfolioproject3-combined-shape"
                       />
                     </div>
@@ -192,7 +192,7 @@ const Portfolioproject3 = (props) => {
               </div>
               <img
                 alt="stickerfinallayer1I546"
-                src="/external/stickerfinallayer1i546-ocut.png"
+                src="external/stickerfinallayer1i546-ocut.png"
                 className="portfolioproject3-stickerfinallayer12 content-divide-child image-contain"
               />
             </div>
@@ -201,7 +201,7 @@ const Portfolioproject3 = (props) => {
             <div className="portfolioproject3-header2 Epilogue-17 content-divide-reverse">
               <img
                 alt="stickerfinallayer1I616"
-                src="/external/stickerfinallayer1i616-r0js.png"
+                src="external/stickerfinallayer1i616-r0js.png"
                 className="portfolioproject3-stickerfinallayer13 content-divide-child image-contain"
               />
               <div className="portfolioproject3-headline-subhead06 content-divide-child">
@@ -209,7 +209,7 @@ const Portfolioproject3 = (props) => {
                   <div className="portfolioproject3-titletop1">
                     <img
                       alt="VirtualProductiondKeyerComponentI616"
-                      src="/external/virtualproductiondkeyercomponenti616-j3sj.svg"
+                      src="external/virtualproductiondkeyercomponenti616-j3sj.svg"
                       className="portfolioproject3-virtual-productiond-keyer-component"
                     />
                   </div>
@@ -254,7 +254,7 @@ const Portfolioproject3 = (props) => {
                     <div className="portfolioproject3-animation-weight-slider">
                       <img
                         alt="UnionI616"
-                        src="/external/unioni616-yjw3.svg"
+                        src="external/unioni616-yjw3.svg"
                         className="portfolioproject3-union"
                       />
                     </div>
@@ -292,7 +292,7 @@ const Portfolioproject3 = (props) => {
               </div>
               <img
                 alt="stickerfinallayer1I616"
-                src="/external/title-osc.gif"
+                src="external/title-osc.gif"
                 className="portfolioproject3-stickerfinallayer14 content-divide-child image-contain"
               />
             </div>
@@ -367,7 +367,7 @@ const Portfolioproject3 = (props) => {
             <div className="portfolioproject3-stickerfinallayer1-locked-aspect-ratio1">
               <img
                 alt="stickerfinallayer1I737"
-                src="/external/stickerfinallayer1i737-gh9d.png"
+                src="external/stickerfinallayer1i737-gh9d.png"
                 className="portfolioproject3-stickerfinallayer15 image-contain"
               />
               <div className="portfolioproject3-frame1"></div>
@@ -402,7 +402,7 @@ const Portfolioproject3 = (props) => {
               </div>
               <img
                 alt="stickerfinallayer1I737"
-                src="/external/stickerfinallayer1i737-jlah.png"
+                src="external/stickerfinallayer1i737-jlah.png"
                 className="portfolioproject3-stickerfinallayer16 content-divide-child image-contain"
               />
             </div>
@@ -436,7 +436,7 @@ const Portfolioproject3 = (props) => {
               </div>
               <img
                 alt="stickerfinallayer1I737"
-                src="/external/stickerfinallayer1i737-oc0a.png"
+                src="external/stickerfinallayer1i737-oc0a.png"
                 className="portfolioproject3-stickerfinallayer17 content-divide-child image-contain"
               />
             </div>
@@ -471,7 +471,7 @@ const Portfolioproject3 = (props) => {
               </div>
               <img
                 alt="stickerfinallayer1I737"
-                src="/external/stickerfinallayer1i737-u98.png"
+                src="external/stickerfinallayer1i737-u98.png"
                 className="portfolioproject3-stickerfinallayer18 content-divide-child image-contain"
               />
             </div>

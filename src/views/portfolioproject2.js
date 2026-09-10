@@ -51,7 +51,7 @@ const Portfolioproject2 = (props) => {
             </div>
             <img
               alt="stickerfinallayer1I546"
-              src="/external/stickerfinallayer1i546-ih6s.png"
+              src="external/stickerfinallayer1i546-ih6s.png"
               className="portfolioproject2-stickerfinallayer1 content-divide-child image-contain"
             />
           </div>
@@ -171,7 +171,7 @@ const Portfolioproject2 = (props) => {
             <div className="portfolioproject2-stickerfinallayer1-locked-aspect-ratio">
               <img
                 alt="stickerfinallayer1I585"
-                src="/external/stickerfinallayer1i585-2po9.png"
+                src="external/stickerfinallayer1i585-2po9.png"
                 className="portfolioproject2-stickerfinallayer11 image-contain"
               />
               <div className="portfolioproject2-frame"></div>
@@ -182,7 +182,7 @@ const Portfolioproject2 = (props) => {
             <div className="portfolioproject2-header1 Epilogue-17 content-divide-reverse">
               <img
                 alt="stickerfinallayer1I546"
-                src="/external/stickerfinallayer1i546-p2it.png"
+                src="external/stickerfinallayer1i546-p2it.png"
                 className="portfolioproject2-stickerfinallayer12 content-divide-child image-contain"
               />
               <div className="portfolioproject2-headline-subhead04 content-divide-child">
@@ -190,7 +190,7 @@ const Portfolioproject2 = (props) => {
                   <div className="portfolioproject2-titletop">
                     <img
                       alt="GraphicsWetaRealTimeIconsdStrandBasedHairI546"
-                      src="/external/graphicswetarealtimeiconsdstrandbasedhairi546-acy.svg"
+                      src="external/graphicswetarealtimeiconsdstrandbasedhairi546-acy.svg"
                       className="portfolioproject2-graphics-weta-real-time-iconsd-strand-based-hair"
                     />
                   </div>
@@ -244,7 +244,7 @@ const Portfolioproject2 = (props) => {
                   <div className="portfolioproject2-titletop1">
                     <img
                       alt="GraphicsWetaRealTimeIconsdSpeedTreeI546"
-                      src="/external/graphicswetarealtimeiconsdspeedtreei546-ztjv.svg"
+                      src="external/graphicswetarealtimeiconsdspeedtreei546-ztjv.svg"
                       className="portfolioproject2-graphics-weta-real-time-iconsd-speed-tree"
                     />
                   </div>
@@ -292,7 +292,7 @@ const Portfolioproject2 = (props) => {
               </div>
               <img
                 alt="stickerfinallayer1I546"
-                src="/external/stickerfinallayer1i546-2h2.png"
+                src="external/stickerfinallayer1i546-2h2.png"
                 className="portfolioproject2-stickerfinallayer13 content-divide-child image-contain"
               />
             </div>
@@ -301,7 +301,7 @@ const Portfolioproject2 = (props) => {
             <div className="portfolioproject2-header3 Epilogue-17 content-divide-reverse">
               <img
                 alt="stickerfinallayer1I546"
-                src="/external/stickerfinallayer1i546-6mkp.png"
+                src="external/stickerfinallayer1i546-6mkp.png"
                 className="portfolioproject2-stickerfinallayer14 content-divide-child image-contain"
               />
               <div className="portfolioproject2-headline-subhead08 content-divide-child">
@@ -310,22 +310,22 @@ const Portfolioproject2 = (props) => {
                     <div className="portfolioproject2-graphics-weta-real-time-iconsd-mesh-lod">
                       <img
                         alt="Rectangle39CopyI546"
-                        src="/external/rectangle39copyi546-py9m.png"
+                        src="external/rectangle39copyi546-py9m.png"
                         className="portfolioproject2-rectangle39-copy"
                       />
                       <img
                         alt="Rectangle39CopyI546"
-                        src="/external/rectangle39copyi546-efbg.png"
+                        src="external/rectangle39copyi546-efbg.png"
                         className="portfolioproject2-rectangle39-copy1"
                       />
                       <img
                         alt="UnionI546"
-                        src="/external/unioni546-75je.svg"
+                        src="external/unioni546-75je.svg"
                         className="portfolioproject2-union"
                       />
                       <img
                         alt="Vector538StrokeI546"
-                        src="/external/vector538strokei546-6dbd.svg"
+                        src="external/vector538strokei546-6dbd.svg"
                         className="portfolioproject2-vector538-stroke"
                       />
                     </div>
@@ -364,7 +364,7 @@ const Portfolioproject2 = (props) => {
                     <div className="portfolioproject2-ui-elements-color">
                       <img
                         alt="UnionI546"
-                        src="/external/unioni546-uel5h.svg"
+                        src="external/unioni546-uel5h.svg"
                         className="portfolioproject2-union1"
                       />
                     </div>
@@ -395,7 +395,7 @@ const Portfolioproject2 = (props) => {
               </div>
               <img
                 alt="stickerfinallayer1I546"
-                src="/external/stickerfinallayer1i546-f4us.png"
+                src="external/stickerfinallayer1i546-f4us.png"
                 className="portfolioproject2-stickerfinallayer15 content-divide-child image-contain"
               />
             </div>

@@ -45,13 +45,13 @@ const Footer = (props) => {
 }
 
 Footer.defaultProps = {
-  fill1Src: '/external/fill1i676-dsgc.svg',
+  fill1Src: 'external/fill1i676-dsgc.svg',
   rootClassName: '',
   fimailAlt: 'fimailI676',
   linkFimail: 'mailto:jiao_xue@hotmaill.com',
   text: 'Let’s Work Together',
   linkPlatformlinkedin: 'https://www.linkedin.com/in/kyloxue/',
-  fimailSrc: '/external/fimaili676-hvq.svg',
+  fimailSrc: 'external/fimaili676-hvq.svg',
   fill1Alt: 'Fill1I676',
 }
 
