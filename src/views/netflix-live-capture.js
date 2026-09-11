@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import { Helmet } from 'react-helmet'
 
@@ -30,6 +30,10 @@ const FixItem = ({ label }) => <li className="Epilogue-17">{label}</li>
 const NetflixLiveCapture = (props) => {
   const walkOldRef = useRef(null)
   const walkNewRef = useRef(null)
+  const sectionScatteredRef = useRef(null)
+  const sectionStreamliningRef = useRef(null)
+  const sectionVibeCodingRef = useRef(null)
+  const sectionAgenticRef = useRef(null)
 
   const replayWalkVideosTogether = () => {
     const oldVideo = walkOldRef.current
@@ -42,6 +46,28 @@ const NetflixLiveCapture = (props) => {
       newVideo.play()
     }
   }
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
+  const timelineNavSentinelRef = useRef(null)
+  const [isTimelineNavPinned, setIsTimelineNavPinned] = useState(false)
+
+  useEffect(() => {
+    const sentinel = timelineNavSentinelRef.current
+    if (!sentinel) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsTimelineNavPinned(!entry.isIntersecting)
+      },
+      { threshold: 0 }
+    )
+    observer.observe(sentinel)
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <div className="netflix-pitch-container">
@@ -71,8 +97,76 @@ const NetflixLiveCapture = (props) => {
             </p>
           </section>
 
+          <div
+            className="netflix-pitch-timeline-sentinel"
+            ref={timelineNavSentinelRef}
+          ></div>
+          <nav
+            className={`netflix-pitch-timeline-nav${
+              isTimelineNavPinned ? ' netflix-pitch-timeline-nav-pinned' : ''
+            }`}
+          >
+            <div className="netflix-pitch-timeline-nav-inner port-container-responsive">
+              <button
+                type="button"
+                className="netflix-pitch-timeline-item"
+                onClick={() => scrollToSection(sectionScatteredRef)}
+              >
+                <span className="netflix-pitch-timeline-dot"></span>
+                <span className="netflix-pitch-timeline-year Epilogue-17Bold">
+                  Before 2022
+                </span>
+                <span className="netflix-pitch-timeline-title Epilogue-17">
+                  A scattered experience
+                </span>
+              </button>
+              <button
+                type="button"
+                className="netflix-pitch-timeline-item"
+                onClick={() => scrollToSection(sectionStreamliningRef)}
+              >
+                <span className="netflix-pitch-timeline-dot"></span>
+                <span className="netflix-pitch-timeline-year Epilogue-17Bold">
+                  2023
+                </span>
+                <span className="netflix-pitch-timeline-title Epilogue-17">
+                  Phase 1: Streamlining workflow
+                </span>
+              </button>
+              <button
+                type="button"
+                className="netflix-pitch-timeline-item"
+                onClick={() => scrollToSection(sectionVibeCodingRef)}
+              >
+                <span className="netflix-pitch-timeline-dot"></span>
+                <span className="netflix-pitch-timeline-year Epilogue-17Bold">
+                  2026
+                </span>
+                <span className="netflix-pitch-timeline-title Epilogue-17">
+                  Phase 2: Vibe coding for optimization
+                </span>
+              </button>
+              <button
+                type="button"
+                className="netflix-pitch-timeline-item"
+                onClick={() => scrollToSection(sectionAgenticRef)}
+              >
+                <span className="netflix-pitch-timeline-dot"></span>
+                <span className="netflix-pitch-timeline-year Epilogue-17Bold">
+                  2026
+                </span>
+                <span className="netflix-pitch-timeline-title Epilogue-17">
+                  Agentic Concepts for Production Workflows
+                </span>
+              </button>
+            </div>
+          </nav>
+
           <section className="netflix-pitch-section">
-            <span className="netflix-pitch-kicker Epilogue-17Bold">
+            <span
+              className="netflix-pitch-kicker Epilogue-17Bold netflix-pitch-scroll-anchor"
+              ref={sectionScatteredRef}
+            >
               The Starting Point ·{' '}
               <span className="netflix-pitch-gradient-text">Before 2022</span>
             </span>
@@ -93,7 +187,10 @@ const NetflixLiveCapture = (props) => {
 
           <section className="netflix-pitch-section">
             <div className="netflix-pitch-section-text">
-              <span className="netflix-pitch-kicker Epilogue-17Bold">
+              <span
+                className="netflix-pitch-kicker Epilogue-17Bold netflix-pitch-scroll-anchor"
+                ref={sectionStreamliningRef}
+              >
                 Team Initiatives ·{' '}
                 <span className="netflix-pitch-gradient-text">2023</span>
               </span>
@@ -126,7 +223,10 @@ const NetflixLiveCapture = (props) => {
           <section className="netflix-pitch-section">
             <div className="netflix-pitch-hero-row">
               <div className="netflix-pitch-hero-text">
-                <span className="netflix-pitch-kicker Epilogue-17Bold">
+                <span
+                  className="netflix-pitch-kicker Epilogue-17Bold netflix-pitch-scroll-anchor"
+                  ref={sectionVibeCodingRef}
+                >
                   AI Enablement ·{' '}
                   <span className="netflix-pitch-gradient-text">2026</span>
                 </span>
@@ -143,7 +243,10 @@ const NetflixLiveCapture = (props) => {
               </h3>
               <p className="netflix-pitch-muted Epilogue-17">
                 Live Capture dev work continued into 2026. AI-assisted
-                development changed how fast we could move. Here's what
+                development changed how fast we could move. I continued the
+                effort with a dev partner to further optimize Live Capture
+                into one centralized panel for all workflows, from
+                connection, to shot, to synchronization. Here's what
                 shipped:
               </p>
             </div>
@@ -259,15 +362,23 @@ const NetflixLiveCapture = (props) => {
               </div>
             </div>
 
-            <h3 className="netflix-pitch-gradient-text Epilogue-24Bold netflix-pitch-agentic-heading">
+            <h3
+              className="netflix-pitch-gradient-text Epilogue-24Bold netflix-pitch-agentic-heading netflix-pitch-scroll-anchor"
+              ref={sectionAgenticRef}
+            >
               2. Agentic Concepts for Production Workflows
             </h3>
 
             <div className="netflix-pitch-agentic-row">
               <div className="netflix-pitch-subsection netflix-pitch-subsection-narrow">
                 <p className="netflix-pitch-muted Epilogue-17">
-                  An early concept I haven't shipped, meant to show how I'd
-                  approach AI-assisted tooling for artists.
+                  Other than new ways of working, I also experimented with
+                  opportunities for artist tooling:{' '}
+                  <strong className="Epilogue-17Bold">
+                    How can we leverage AI-assisted tooling for various
+                    production work?
+                  </strong>{' '}
+                  Following are two concepts and mockups.
                 </p>
                 <div className="netflix-pitch-concepts">
                   <ConceptCard tag="Concept and Mockup" title="AI Motion Cleanup for Cinemachine">
