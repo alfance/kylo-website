@@ -416,7 +416,8 @@ h3.netflix-pitch-gradient-text {
   flex-shrink: 0;
 }
 .netflix-pitch-agentic-row-2 .netflix-pitch-subsection-narrow {
-  width: 30%;
+  width: 50%;
+  min-width: 400px;
 }
 .netflix-pitch-agentic-video {
   display: block;
@@ -434,6 +435,12 @@ h3.netflix-pitch-gradient-text {
   aspect-ratio: 669 / 379;
   flex-shrink: 0;
   margin-top: 16px;
+}
+@media (min-width: 1000px) {
+  .netflix-pitch-agentic-phone {
+    width: 50vw;
+    max-width: 1000px;
+  }
 }
 .netflix-pitch-agentic-phone-video {
   position: absolute;
