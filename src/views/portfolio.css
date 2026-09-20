@@ -42,16 +42,15 @@
   flex-shrink: 0;
   justify-content: flex-start;
 }
-.portfolio-video {
+.portfolio-gradient {
   top: 0px;
   left: 0px;
   right: 0px;
-  width:  100%;
-  height: auto;
-  opacity: 0.95;
+  height: 100%;
   z-index: -1;
   position: absolute;
-  padding-bottom: 0px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
 }
 .portfolio-headline-subhead {
   gap: 40px;
@@ -59,7 +58,7 @@
   display: flex;
   z-index: 100;
   flex-grow: 1;
-  max-width: 70%;
+  max-width: 100%;
   align-self: center;
   align-items: flex-start;
   flex-shrink: 0;
@@ -75,6 +74,7 @@
   flex-direction: column;
 }
 .portfolio-text {
+  position: relative;
   color: var(--dl-color-default-textdefault);
   width: auto;
   height: auto;
@@ -90,15 +90,29 @@
   font-style: normal;
   font-weight: 300;
 }
+.portfolio-headline-line {
+  display: block;
+  position: relative;
+}
+.portfolio-text .portfolio-greeting {
+  font-size: 48px;
+  line-height: 58px;
+}
+.portfolio-text .portfolio-name-large {
+  text-transform: uppercase;
+  font-size: 104px;
+  line-height: 118px;
+}
 .portfolio-text03 {
   color: var(--dl-color-default-textdefault);
   height: auto;
   font-size: 24px;
-  align-self: stretch;
+  align-self: flex-start;
+  max-width: 700px;
   font-style: normal;
   text-align: left;
   font-family: "Epilogue";
-  line-height: 32px;
+  line-height: 40px;
   letter-spacing: 0em;
 }
 .portfolio-portfolio1 {

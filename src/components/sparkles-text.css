@@ -1,0 +1,9 @@
+.sparkles-text-inner {
+  display: inline;
+}
+.sparkles-text-star {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  line-height: 0;
+}
