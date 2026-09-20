@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
-import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import Grainient from '../components/grainient'
 import SparklesText from '../components/sparkles-text'
@@ -48,7 +47,6 @@ const Portfolio = (props) => {
         <title>Kylo Xue Portfolio Website</title>
       </Helmet>
       <div className="portfolio-portfolio">
-        <Navbar rootClassName="navbar-root-class-name"></Navbar>
         <div className="portfolio-header">
           <div className="portfolio-header1 content-divide">
             <motion.div

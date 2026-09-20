@@ -62,7 +62,7 @@
 }
 .netflix-pitch-timeline-nav {
   position: sticky;
-  top: 0;
+  top: 80px;
   z-index: 20;
   display: flex;
   width: 100%;
@@ -390,7 +390,7 @@ h3.netflix-pitch-gradient-text {
   margin-top: 70px;
 }
 .netflix-pitch-scroll-anchor {
-  scroll-margin-top: 300px;
+  scroll-margin-top: 380px;
 }
 .netflix-pitch-agentic-row {
   width: 100%;

@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom'
 
 import './style.css'
+import Navbar from './components/navbar'
 import Portfolioproject3 from './views/portfolioproject3'
 import PortfolioAboutpage from './views/portfolio-aboutpage'
 import Portfolio from './views/portfolio'
@@ -31,6 +32,7 @@ const App = () => {
   return (
     <HashRouter>
       <ScrollToTop>
+        <Navbar />
         <Switch>
           <Route component={Portfolioproject3} exact path="/portfolioproject3" />
           <Route

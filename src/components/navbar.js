@@ -1,13 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
 import './navbar.css'
 
+const SCROLLED_THRESHOLD = 8
+
 const Navbar = (props) => {
+  const [scrolled, setScrolled] = useState(
+    () => window.scrollY > SCROLLED_THRESHOLD,
+  )
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > SCROLLED_THRESHOLD)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
-    <div className={`navbar-container ${props.rootClassName} `}>
+    <div
+      className={`navbar-container ${props.rootClassName}${
+        scrolled ? ' navbar-scrolled' : ''
+      }`}
+    >
       <div className="navbar-navigation">
         <div className="navbar-navnavmenu">
           <Link to="/" className="navbar-text Epilogue-17">

@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import './portfolio-aboutpage.css'
 
@@ -13,7 +12,6 @@ const PortfolioAboutpage = (props) => {
         <title>Kylo Xue Portfolio Website</title>
       </Helmet>
       <div className="portfolio-aboutpage-portfolio-aboutpage overflown-small-size">
-        <Navbar rootClassName="navbar-root-class-name1"></Navbar>
         <iframe
           src="https://my.spline.design/untitled-da038bfef5598cff4c06e181df7f5444/"
           className="portfolio-aboutpage-iframe"
