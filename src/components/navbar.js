@@ -30,9 +30,6 @@ const Navbar = (props) => {
           <Link to="/" className="navbar-text Epilogue-17">
             Home
           </Link>
-          <Link to="/portfolio-aboutpage" className="navbar-text1 Epilogue-17">
-            <span className="">{props.text}</span>
-          </Link>
           <img
             alt={props.line1Alt}
             src={props.line1Src}
@@ -70,8 +67,6 @@ Navbar.defaultProps = {
   text3: 'Linkedin',
   linkText:
     'https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-portfolio22&utm_medium=figma-samples',
-  text1: 'Works',
-  text: 'About',
   linkText3:
     'https://www.animaapp.com/?utm_source=figma-samples&utm_campaign=figma-portfolio22&utm_medium=figma-samples',
   line1Src: 'external/line1i176-mq9.svg',
@@ -88,8 +83,6 @@ Navbar.propTypes = {
   rootClassName: PropTypes.string,
   text3: PropTypes.string,
   linkText: PropTypes.string,
-  text1: PropTypes.string,
-  text: PropTypes.string,
   linkText3: PropTypes.string,
   line1Src: PropTypes.string,
   text2: PropTypes.string,
