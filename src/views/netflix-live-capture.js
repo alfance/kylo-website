@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import ScatteredShowcase from '../components/scattered-showcase'
 import UxShowcase from '../components/ux-showcase'
@@ -63,7 +62,7 @@ const NetflixLiveCapture = (props) => {
       ([entry]) => {
         setIsTimelineNavPinned(!entry.isIntersecting)
       },
-      { threshold: 0 }
+      { threshold: 0, rootMargin: '-80px 0px 0px 0px' }
     )
     observer.observe(sentinel)
     return () => observer.disconnect()
@@ -76,7 +75,6 @@ const NetflixLiveCapture = (props) => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <div className="netflix-pitch-page overflown-small-size">
-        <Navbar rootClassName="navbar-root-class-name2"></Navbar>
         <div className="netflix-pitch-content port-container-responsive">
 
           <section className="netflix-pitch-hero">

@@ -3,12 +3,21 @@ import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
-import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import Grainient from '../components/grainient'
+import SparklesText from '../components/sparkles-text'
+import { motion, useReducedMotion } from 'framer-motion'
 import AnimateOnReveal from '../components/animate-on-reveal'
 import './portfolio.css'
 
 const Portfolio = (props) => {
+  const reduceMotion = useReducedMotion()
+  const fadeUp = (order) => ({
+    initial: { opacity: 0, y: reduceMotion ? 0 : 24 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: 'easeOut', delay: 0.1 + order * 0.12 },
+  })
+
   const cortexGifRef = useRef(null)
   const [cortexGifVisible, setCortexGifVisible] = useState(false)
 
@@ -38,49 +47,57 @@ const Portfolio = (props) => {
         <title>Kylo Xue Portfolio Website</title>
       </Helmet>
       <div className="portfolio-portfolio">
-        <Navbar rootClassName="navbar-root-class-name"></Navbar>
         <div className="portfolio-header">
           <div className="portfolio-header1 content-divide">
-            <video
-              src="external/10-gradient-depth-copy-6.mp4"
-              loop="true"
-              muted="true"
-              poster="external/10-gradient-depth-copy-6-1500h.jpg"
-              preload="auto"
-              autoPlay="true"
-              className="portfolio-video"
-            ></video>
+            <motion.div
+              className="portfolio-gradient"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2, ease: 'easeOut' }}
+            >
+              <Grainient
+                color1="#17395b"
+                color2="#0b0818"
+                color3="#5d4276"
+                timeSpeed={0.25}
+                zoom={0.9}
+              />
+            </motion.div>
             <div className="portfolio-headline-subhead port-container-responsive">
               <div className="portfolio-headline-subhead01">
                 <span className="portfolio-text">
-                  <span className="portfolio-text01">I am</span>
-                  <span className="Epilogue-64Bold"> Kylo Xue</span>
+                  <motion.span
+                    className="portfolio-headline-line"
+                    {...fadeUp(0)}
+                  >
+                    <span className="portfolio-text01 portfolio-greeting">
+                      Hello, nice to meet you. You&apos;ve just landed on
+                    </span>
+                  </motion.span>
+                  <motion.span
+                    className="portfolio-headline-line"
+                    {...fadeUp(1)}
+                  >
+                    <SparklesText
+                      text="Kylo Xue's Portfolio"
+                      colors={{ first: '#72B4FF', second: '#BB8BFE' }}
+                      className="Epilogue-64Bold portfolio-name-large"
+                    />
+                    <span className="portfolio-text01">.</span>
+                  </motion.span>
                 </span>
               </div>
-              <span className="portfolio-text03">
-                <span className="Epilogue-24Light">
-                  A
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
+              <motion.span className="portfolio-text03" {...fadeUp(2)}>
+                <span className="Epilogue-24Light">I&apos;m a </span>
                 <span className="Epilogue-24Bold">
-                  product and interactive designer
+                  product &amp; interaction designer
                 </span>
                 <span className="Epilogue-24Light">
                   {' '}
-                  passionate about crafting user-centric digital experiences. 
+                  with 10+ years across startups and large enterprises, now
+                  designing tools for both people and AI agents.
                 </span>
-                <br className="Epilogue-24Light"></br>
-                <br className="Epilogue-24Light"></br>
-                <span className="Epilogue-24Light">
-                  Working in the design field for over 10 years, I&apos;ve been
-                  enhancing User experience in various industries from startups
-                  to corporations.
-                </span>
-              </span>
+              </motion.span>
             </div>
           </div>
         </div>

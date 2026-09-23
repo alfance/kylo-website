@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import AnimateOnReveal from '../components/animate-on-reveal'
 import './portfolioproject1.css'
@@ -14,7 +13,6 @@ const Portfolioproject1 = (props) => {
         <title>Kylo Xue Portfolio Website</title>
       </Helmet>
       <div className="portfolioproject1-portfolioproject1 overflown-small-size">
-        <Navbar rootClassName="navbar-root-class-name2"></Navbar>
         <div className="portfolioproject1-portfolio1 port-container-responsive">
           <div className="portfolioproject1-projectheader content-divide">
             <section className="portfolioproject1-headline-subhead content-divide-child">

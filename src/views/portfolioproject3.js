@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import Navbar from '../components/navbar'
 import HeaderTitle from '../components/header-title'
 import Footer from '../components/footer'
 import './portfolioproject3.css'
@@ -14,7 +13,6 @@ const Portfolioproject3 = (props) => {
         <title>Kylo Xue Portfolio Website</title>
       </Helmet>
       <div className="portfolioproject3-portfolioproject3 overflown-small-size">
-        <Navbar rootClassName="navbar-root-class-name4"></Navbar>
         <div className="portfolioproject3-portfolio1 port-container-responsive">
           <div className="portfolioproject3-projectheader content-divide">
             <div className="portfolioproject3-headline-subhead content-divide-child">
