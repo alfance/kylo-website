@@ -1,0 +1,94 @@
+.bas-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  cursor: ew-resize;
+  touch-action: none;
+  user-select: none;
+}
+.bas-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  pointer-events: none;
+}
+
+.bas-divider {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.bas-divider line {
+  stroke: var(--dl-color-gray-white);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  opacity: 1;
+}
+
+.bas-handle {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #c1665f 0%, #7a1f1f 100%);
+  border: 2px solid var(--dl-color-gray-white);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  cursor: ew-resize;
+}
+.bas-handle:focus-visible {
+  outline: 2px solid var(--dl-color-gray-white);
+  outline-offset: 3px;
+}
+.bas-handle-arrow {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.bas-handle-arrow-left {
+  border-right: 7px solid var(--dl-color-gray-white);
+}
+.bas-handle-arrow-right {
+  border-left: 7px solid var(--dl-color-gray-white);
+}
+
+.bas-label {
+  position: absolute;
+  bottom: 16px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: rgba(10, 10, 10, 0.6);
+  color: var(--dl-color-default-textdefault);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+  pointer-events: none;
+}
+.bas-label-before {
+  left: 16px;
+}
+.bas-label-after {
+  right: 16px;
+}
+
+@media (max-width: 600px) {
+  .bas-frame {
+    aspect-ratio: 4 / 5;
+  }
+}

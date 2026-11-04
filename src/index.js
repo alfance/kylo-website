@@ -16,6 +16,7 @@ import Portfolio from './views/portfolio'
 import Portfolioproject2 from './views/portfolioproject2'
 import Portfolioproject1 from './views/portfolioproject1'
 import NetflixLiveCapture from './views/netflix-live-capture'
+import NetflixHighlights from './views/netflix-highlights'
 import NotFound from './views/not-found'
 
 
@@ -41,6 +42,11 @@ const App = () => {
             component={NetflixLiveCapture}
             exact
             path="/netflix-live-capture"
+          />
+          <Route
+            component={NetflixHighlights}
+            exact
+            path="/netflix-highlights"
           />
           <Route component={NotFound} path="**" />
           <Redirect to="**" />
