@@ -109,6 +109,7 @@ const Portfolio = (props) => {
               </span>
             </AnimateOnReveal>
             <div className="portfolio-workcards">
+              <Link to="/netflix-highlights" className="portfolio-navlink3">
               <div className="portfolio-workcard06">
                 <div className="portfolio-workcard-locked-aspect-ratio4">
                   <div className="portfolio-workcard07">
@@ -137,6 +138,17 @@ const Portfolio = (props) => {
                                   2024 - 2026
                                 </span>
                               </span>
+                              <div
+                                className="portfolio-case-cta"
+                                title="Password required to view"
+                              >
+                                <span className="portfolio-text29 Epilogue-24Bold">
+                                  Case Study &gt;
+                                </span>
+                                <span className="portfolio-case-cta-note Epilogue-17">
+                                  Password required
+                                </span>
+                              </div>
                             </div>
                           </div>
                         </AnimateOnReveal>
@@ -169,7 +181,9 @@ const Portfolio = (props) => {
                   <div className="portfolio-frame08"></div>
                 </div>
               </div>
+              </Link>
 
+              <Link to="/ai-initiatives" className="portfolio-navlink3">
               <div className="portfolio-workcard06">
                 <div className="portfolio-workcard-locked-aspect-ratio4">
                   <div className="portfolio-workcard07">
@@ -196,6 +210,17 @@ const Portfolio = (props) => {
                                 </span>
                                 <span className="portfolio-text28">2026</span>
                               </span>
+                              <div
+                                className="portfolio-case-cta"
+                                title="Password required to view"
+                              >
+                                <span className="portfolio-text29 Epilogue-24Bold">
+                                  Case Study &gt;
+                                </span>
+                                <span className="portfolio-case-cta-note Epilogue-17">
+                                  Password required
+                                </span>
+                              </div>
                             </div>
                           </div>
                         </AnimateOnReveal>
@@ -239,6 +264,7 @@ const Portfolio = (props) => {
                   <div className="portfolio-frame08"></div>
                 </div>
               </div>
+              </Link>
 
               <Link to="/portfolioproject1" className="portfolio-navlink">
                 <div className="portfolio-workcard">
