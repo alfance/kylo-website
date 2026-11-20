@@ -41,11 +41,19 @@ const Media = ({ src, alt }) =>
     <img src={src} alt={alt} loading="lazy" />
   )
 
-const Row = ({ tag, lead, desc, bullets, src, alt, plain, children }) => (
+const Row = ({ tag, lead, desc, bullets, src, alt, plain, bleed, children }) => (
   <div className="ai-row">
     <RowText tag={tag} lead={lead} desc={desc} bullets={bullets} />
     {src && (
-      <div className={plain ? 'ai-row-media ai-row-media--plain' : 'ai-row-media'}>
+      <div
+        className={[
+          'ai-row-media',
+          plain && 'ai-row-media--plain',
+          bleed && 'ai-row-media--bleed',
+        ]
+          .filter(Boolean)
+          .join(' ')}
+      >
         <Media src={src} alt={alt} />
       </div>
     )}
@@ -208,6 +216,7 @@ const AiInitiatives = (props) => {
                 lead="Cortex layouts, built on internal patterns"
                 src="external/ai-initiatives/patterns-in-practice.mp4"
                 alt="Figma specs for Cortex conversational AI layouts: anatomy, layout and spacing, and reasoning chain"
+                bleed
               />
 
               <ThreeLayers />

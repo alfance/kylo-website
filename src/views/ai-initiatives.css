@@ -217,6 +217,22 @@
   background-color: transparent;
   box-shadow: none;
 }
+.ai-row-media--bleed {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 1800px;
+  min-width: 0;
+  max-height: none;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.ai-row-media--bleed img,
+.ai-row-media--bleed video {
+  max-height: none;
+}
 
 .ai-row-media-pair {
   position: relative;
