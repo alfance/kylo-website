@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@auth0/auth0-react": "^2.30.0",
     "@craco/craco": "^7.0.0-alpha.0",
     "@gsap/react": "^2.1.2",
     "framer-motion": "^6.5.1",

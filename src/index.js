@@ -9,6 +9,8 @@ import {
   useLocation,
 } from 'react-router-dom'
 
+import { Auth0Provider } from '@auth0/auth0-react'
+
 import './style.css'
 import Navbar from './components/navbar'
 import Portfolioproject3 from './views/portfolioproject3'
@@ -18,6 +20,7 @@ import Portfolioproject1 from './views/portfolioproject1'
 import NetflixLiveCapture from './views/netflix-live-capture'
 import NetflixHighlights from './views/netflix-highlights'
 import AiInitiatives from './views/ai-initiatives'
+import AuthTest from './views/auth-test'
 import NotFound from './views/not-found'
 
 
@@ -54,6 +57,7 @@ const App = () => {
             exact
             path="/ai-initiatives"
           />
+          <Route component={AuthTest} exact path="/auth-test" />
           <Route component={NotFound} path="**" />
           <Redirect to="**" />
         </Switch>
@@ -62,4 +66,13 @@ const App = () => {
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  <Auth0Provider
+    domain="dev-ag40b3fzh0ynrhhy.us.auth0.com"
+    clientId="bm2c40pQGP9ROnTb3jsghip4yYUpCfog"
+    authorizationParams={{ redirect_uri: window.location.origin }}
+  >
+    <App />
+  </Auth0Provider>,
+  document.getElementById('app')
+)
