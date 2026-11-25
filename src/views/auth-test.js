@@ -4,18 +4,26 @@ import { useAuth0 } from '@auth0/auth0-react'
 const AuthTest = () => {
   const { isLoading, isAuthenticated, user, loginWithRedirect, logout } = useAuth0()
 
-  if (isLoading) return <p>Loading...</p>
+  if (isLoading) return <p style={{ color: '#fff', padding: 100 }}>Loading...</p>
 
   return isAuthenticated ? (
-    <div style={{ padding: 100 }}>
+    <div style={{ padding: 100, color: '#fff' }}>
       <p>Logged in as {user.email}</p>
-      <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+      <button
+        style={{ color: '#fff' }}
+        onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
+      >
         Logout
       </button>
     </div>
   ) : (
-    <div style={{ padding: 100 }}>
-      <button onClick={() => loginWithRedirect()}>Login</button>
+    <div style={{ padding: 100, color: '#fff' }}>
+      <button
+        style={{ background: '#fff', color: '#000' }}
+        onClick={() => loginWithRedirect()}
+      >
+        Login
+      </button>
     </div>
   )
 }
